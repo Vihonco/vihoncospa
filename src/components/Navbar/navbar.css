@@ -1,0 +1,21 @@
+.navbar {
+  display: flex;
+
+
+  background-color: #6ec1e4;
+  border-radius: 0 0 850px 10px;
+  /* height: 150px;  */
+  /* padding: 15px 25px;  */
+  font-size: 20px;
+}
+
+
+.navbar .nav-item .nav-link {
+  color: rgb(255, 255, 255); /* Color de letra blanco */
+  font-size: 15px; /* Tamaño de fuente 15px */
+  text-decoration: none; /* Quita subrayado de los enlaces */
+}
+
+.navbar .nav-item .nav-link:hover {
+  color: #000000; /* Cambia color de letra al pasar el mouse */
+}

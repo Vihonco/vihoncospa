@@ -1,0 +1,10 @@
+.redes-icon {
+    max-width: 30px; /* Ajusta el ancho máximo de los iconos */
+    max-height: 30px; /* Ajusta el alto máximo de los iconos */
+    transition: transform 0.3s ease; /* Transición suave de 0.3 segundos para transformaciones */
+  }
+  
+  .redes-icon:hover {
+    transform: scale(1.2); /* Escala al 120% del tamaño original al pasar el mouse */
+  }
+  

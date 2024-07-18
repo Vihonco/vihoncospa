@@ -1,0 +1,48 @@
+
+.container-footer{
+    background-color: rgb(176, 238, 252);
+}
+.container {
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contact-info,
+  .notifications {
+    padding: 20px;
+    
+    border-radius: 8px;
+  }
+  
+  .sede1,
+  .sede2,
+  .sede3,
+  .clinica,
+  .sede4 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .sede1 h3,
+  .sede2 h3,
+  .sede3 h3,
+  .clinica h3,
+  .sede4 h3 {
+    font-size: 18px;
+    margin-left: 10px; /* Espacio entre el ícono y el texto de la dirección */
+  }
+  
+  .contact h3,
+  .notificaciones h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .left h2{
+    text-align: start;
+  }
