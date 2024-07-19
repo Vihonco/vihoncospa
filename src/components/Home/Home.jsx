@@ -22,7 +22,7 @@ export default function Home() {
      <div className="banner">
       <Banner/>
      </div>
-     
+    
      <div className="nosotros">
       <Nosotros/>
      </div>

@@ -31,4 +31,9 @@
     height: 100%;
     z-index: -1;
   }
+  .banner{
+    
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
   
