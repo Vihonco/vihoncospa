@@ -1,0 +1,51 @@
+.info-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .info-container h1{
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .info-container h4{
+    margin-top: 50px;
+    font-size: 18px;
+    text-align: justify;
+  }
+  .text-section {
+    flex: 1;
+    margin-right: 20px;
+    text-align: justify;
+  }
+  .text-section p {
+    text-align: justify; /* Justifica el texto en los párrafos */
+}
+  .images-section {
+
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  
+  .info-item .icon {
+   border-radius: 0 80px 0 80px;
+   margin-top: 20px;
+    height: 230px;
+    
+    
+  }
+  .info-item .icon2 {
+    border-radius:  80px 0 80px 0 ;
+     height: 250px;
+     margin-right: 250px;
+   }
+   
+  
+  .info-item h4 {
+    margin: 0;
+    font-size: 1.25rem; /* Ajusta el tamaño del texto según sea necesario */
+  }
+  

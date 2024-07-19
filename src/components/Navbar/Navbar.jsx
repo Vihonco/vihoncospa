@@ -24,7 +24,7 @@ export default function Navbar() {
         <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="/">
                 Inicio
               </a>
             </li>
@@ -44,7 +44,7 @@ export default function Navbar() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#/servicios">
                 Servicios
               </a>
             </li>

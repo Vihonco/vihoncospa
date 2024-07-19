@@ -6,6 +6,7 @@ import Footer from '../Footer/Footer'
 import Redes from '../Redes/Redes'
 import Banner from '../Banner/Banner'
 import Servicios from '../Servicios/Servicios'
+import Informacion from '../Informacion/Informacion'
 
 export default function Home() {
   return (
@@ -22,6 +23,9 @@ export default function Home() {
      <div className="banner">
       <Banner/>
      </div>
+     <div className="information">
+        <Informacion/>
+     </div> 
     
      <div className="nosotros">
       <Nosotros/>

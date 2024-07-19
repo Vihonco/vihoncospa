@@ -1,3 +1,18 @@
+
+.card {
+  margin: 1rem 0.5rem; /* Espacio alrededor de las tarjetas */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column; /* Asegura que las tarjetas se comporten como columnas */
+  height: 100%;
+  margin-bottom: 50px;
+  /* text-align: justify; */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Zoom de 5% al pasar el ratón */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar un efecto de profundidad */
+}
 .servicios-card {
     background-size: cover;
     background-position: center;
@@ -13,6 +28,7 @@
   }
   
   .servicios-card .card-title {
+    font-size: 15px;
     color: white;
   }
   
@@ -29,23 +45,26 @@
     background-image: url('../../assets/especialidades/odontologia.jpg');
   }
   
-  /* .fisioterapia {
-    background-image: url('/images/fisioterapia.jpg');
+  .fisioterapia {
+    background-image: url('../../assets/especialidades/odontologia.jpg');
   }
+
   
   .hospitalizacion-adultos {
-    background-image: url('/images/hospitalizacion-adultos.jpg');
+   background-image: url('../../assets/especialidades/medGeneral.jpg');
   }
   
   .transporte-asistencial {
-    background-image: url('/images/transporte-asistencial.jpg');
+    background-image: url('../../assets/especialidades/odontologia.jpg');
   }
   
+  
   .consulta-especializada {
-    background-image: url('/images/consulta-especializada.jpg');
+background-image: url('../../assets/especialidades/medGeneral.jpg');
   }
   
   .cirugia-ambulatoria {
-    background-image: url('/images/cirugia-ambulatoria.jpg');
+    background-image: url('../../assets/especialidades/odontologia.jpg');
   }
-   */
+
+  
