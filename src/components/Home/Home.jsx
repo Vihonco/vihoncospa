@@ -13,11 +13,13 @@ export default function Home() {
     <div>
       <Navbar/>
      <div className="container">
-     <h1 className=''>Somos contratistas 
+     <div className="home">
+     <h1>Somos contratistas 
       <br />la Nueva EPS </h1>
       <br />
       <h4>
       Eres la prioridad para nosotros</h4>
+     </div>
      
      </div>
      <div className="banner">
