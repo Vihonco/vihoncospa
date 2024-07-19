@@ -1,0 +1,51 @@
+.servicios-card {
+    background-size: cover;
+    background-position: center;
+    color: white; /* Cambiar el color del texto para que sea legible */
+    border: none; /* Opcional: elimina el borde de la tarjeta */
+  }
+  
+  .servicios-card .card-body {
+    /* height: 150px; */
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.5); /* Añadir un fondo semi-transparente al contenido de la tarjeta */
+    padding: 20px;
+  }
+  
+  .servicios-card .card-title {
+    color: white;
+  }
+  
+  /* Estilos específicos para cada tarjeta */
+  .consulta-medica {
+    background-image: url('../../assets/especialidades/medGeneral.jpg');
+  }
+  
+  .servicios-diagnosticos {
+    background-image: url('../../assets/especialidades/medGeneral.jpg');
+  }
+  
+  .odontologia {
+    background-image: url('../../assets/especialidades/odontologia.jpg');
+  }
+  
+  /* .fisioterapia {
+    background-image: url('/images/fisioterapia.jpg');
+  }
+  
+  .hospitalizacion-adultos {
+    background-image: url('/images/hospitalizacion-adultos.jpg');
+  }
+  
+  .transporte-asistencial {
+    background-image: url('/images/transporte-asistencial.jpg');
+  }
+  
+  .consulta-especializada {
+    background-image: url('/images/consulta-especializada.jpg');
+  }
+  
+  .cirugia-ambulatoria {
+    background-image: url('/images/cirugia-ambulatoria.jpg');
+  }
+   */

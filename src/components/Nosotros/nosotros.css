@@ -1,19 +1,17 @@
-
-.card{
-    background-color: rgba(105, 104, 104, 0.628);
-    color: white;
+/* Asegúrate de que estos estilos solo se apliquen a las tarjetas dentro de Nosotros */
+.nosotros .card {
+  background-color: rgba(105, 104, 104, 0.628);
+  color: white;
 }
-/* Estilo para los iconos */
-.card .svg-inline--fa {
-    color: #f8dbdb; /* Color rojo para los iconos */
-  }
-  
-  /* Estilo para el título de la carta */
-  .card-title {
-    color: #2d2c2c; /* Texto blanco para el título */
-  }
-  
-  /* Estilo para el texto de la carta */
-  .card-text {
-    color: #ffffff; /* Texto blanco para el contenido */
-  }
+
+.nosotros .card .svg-inline--fa {
+  color: #f8dbdb; /* Color rojo para los iconos */
+}
+
+.nosotros .card .card-title {
+  color: #2d2c2c; /* Texto blanco para el título */
+}
+
+.nosotros .card .card-text {
+  color: #ffffff; /* Texto blanco para el contenido */
+}

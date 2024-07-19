@@ -4,11 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHandshake, faBullseye, faHeartbeat, faBalanceScale, faComments, faAdjust } from "@fortawesome/free-solid-svg-icons";
 import './nosotros.css'
 
-
 export default function Nosotros() {
   return (
-    <div className="container">
-      <h2 className="text-center my-5">Los valores que nos caracterizan</h2>
+    <div className="container nosotros">
+      <h2 className="text-center my-5">Valores que nos caracterizan</h2>
       <h4>en UBA Vihonco S.A.S</h4>
       <Carousel>
         <Carousel.Item>
@@ -20,8 +19,6 @@ export default function Nosotros() {
                   <Card.Title>Respeto</Card.Title>
                   <Card.Text>
                     Valorar los intereses y necesidades de otro individuo.
-
-                    
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -100,4 +97,3 @@ export default function Nosotros() {
     </div>
   );
 }
-

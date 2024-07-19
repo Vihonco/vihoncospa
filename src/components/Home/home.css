@@ -7,7 +7,9 @@
 .container h1{
 
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 80px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    font-size: 55px;
     color: rgb(0, 0, 0);
 
   /* Establecer el grosor y el color del borde */
@@ -17,7 +19,16 @@
 .container h4{
     font-family: 'Courier New', Courier, monospace;
     -webkit-text-stroke: 2px rgb(36, 119, 167);
+    margin-bottom: 50px;
 }
 .nosotros{
     background-color: rgba(22, 124, 214, 0.167);
 }
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
