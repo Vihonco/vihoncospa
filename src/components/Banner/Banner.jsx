@@ -3,7 +3,7 @@ import sede1 from '../../assets/sedes/sede-1.jpg'
 import sede2 from '../../assets/sedes/sede-2.jpg'
 import sede3 from '../../assets/sedes/calle17.jpg'
 import sede4 from '../../assets/sedes/clinica.jpg'
-import sede5 from '../../assets/sedes/villa.jpg'
+import sede5 from '../../assets/sedes/ROSA.jpeg'
 
 export default function Banner() {
   return (
@@ -22,7 +22,7 @@ export default function Banner() {
       <img src={sede4} class="d-block w-100" alt="Img Not Found" height="350px"/>
     </div>
     <div class="carousel-item active">
-      <img src={sede5} class="d-block w-100" alt="Img Not Found" height="350px"/>
+      <img src={sede5} class="d-block w-100" alt="Img Not Found" height="650px"/>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
