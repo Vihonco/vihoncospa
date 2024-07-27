@@ -4,7 +4,7 @@ import "./home.css";
 import Nosotros from "../Nosotros/Nosotros";
 import Footer from "../Footer/Footer";
 import Redes from "../Redes/Redes";
-import Banner from "../Banner/Banner";
+import Banner from "../Admin/Banner/Banner";
 import Servicios from "../Servicios/Servicios";
 import Informacion from "../Informacion/Informacion";
 
