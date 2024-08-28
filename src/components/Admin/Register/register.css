@@ -1,0 +1,70 @@
+.container-register {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.register-content {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2), /* Sombra externa */
+              inset 0px 4px 8px rgba(255, 255, 255, 0.1); /* Sombra interna */
+  border-radius: 8px;
+  border: 1px solid #e0e0e0; /* Borde claro */
+  transition: all 0.3s ease; /* Transición suave para los efectos */
+}
+
+.register-content:hover {
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3), 
+              inset 0px 6px 12px rgba(255, 255, 255, 0.2); /* Aumenta el relieve al pasar el ratón */
+}
+
+.register-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-content button {
+  margin-top: 20px;
+}
+
+.logo-contan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.logo-contan img {
+  width: 100%;
+  max-width: 180px;
+  animation: fallBounce 2s ease-in-out;
+}
+
+@keyframes fallBounce {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.submit-button {
+  max-width: 100px;
+  align-self: center;
+  margin-top: 20px;
+}

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { TextField, Button, Container, Typography } from '@mui/material';
 import Cookies from 'js-cookie';
-import Logo from '../../../assets/logo.png';
+import imagen from '../../../assets/lgo.jpg';
 import './login.css';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
@@ -49,8 +49,8 @@ export default function Login() {
   return (
     <Container component="main" maxWidth="xs" className="container-login">
       <div className="login-content">
-        <div className="logo-container">
-          <img src={Logo} alt="Img Not Found" />
+      <div className="logo-container">
+          <img src={imagen} alt="Img Not Found" />
         </div>
         <form onSubmit={handleSubmit}>
           <TextField
@@ -76,9 +76,18 @@ export default function Login() {
             required
           />
           <div className="buton-register">
-          <Button type="submit" fullWidth variant="contained" color="primary">
+          <Button type="submit" fullWidth variant="contained" color="primary" >
             Iniciar Sesión
           </Button>
+
+          <Typography variant="body2" >
+            No estás registrado?.
+            
+          
+            ¡Regístrate ahora ! 
+             
+          </Typography>
+          
           <a href="/register">Registrate</a>
           </div>
           
@@ -87,7 +96,7 @@ export default function Login() {
             No estás registrado.
             
           
-            ¡Regístrate ahora para acceder a nuestra tienda! 
+            ¡Regístrate ahora ! 
              
           </Typography>
           

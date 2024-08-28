@@ -1,0 +1,44 @@
+.sidebar {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-right: 1px solid #ddd;
+  }
+  
+  .menu h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .banner {
+    margin-top: 20px;
+  }
+  
+  .dropdown-title {
+    cursor: pointer;
+    color: #333;
+    font-size: 20px;
+  }
+  
+  .dropdown-menu {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100px; /* Ajusta el ancho del menú según sea necesario */
+  }
+  
+  .dropdown-menu li {
+    padding: 10px;
+  }
+  
+  .dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #f0f0f0;
+  }
+  
