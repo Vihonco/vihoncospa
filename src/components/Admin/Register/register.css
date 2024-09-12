@@ -1,3 +1,4 @@
+
 .container-register {
   margin-top: 25px;
   display: flex;
@@ -10,7 +11,7 @@
   width: 100%;
   max-width: 600px;
   padding: 20px;
-  background-color: white;
+  background-color: rgba(235, 235, 235, 0.486);
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2), /* Sombra externa */
               inset 0px 4px 8px rgba(255, 255, 255, 0.1); /* Sombra interna */
   border-radius: 8px;
@@ -41,6 +42,7 @@
 }
 
 .logo-contan img {
+  border-radius: 100px;
   width: 100%;
   max-width: 180px;
   animation: fallBounce 2s ease-in-out;
@@ -64,7 +66,22 @@
 }
 
 .submit-button {
-  max-width: 100px;
+  max-width: 110px;
   align-self: center;
   margin-top: 20px;
+}
+.form-header {
+  display: flex;
+  justify-content: flex-end; /* Alinea el contenido a la derecha */
+  margin-bottom: 10px; /* Espacio debajo del enlace */
+}
+
+.back-link {
+  color: #007bff; /* Color del enlace */
+  text-decoration: none; /* Sin subrayado */
+  font-weight: bold; /* Negrita */
+}
+
+.back-link:hover {
+  text-decoration: underline; /* Subrayado al pasar el ratón */
 }

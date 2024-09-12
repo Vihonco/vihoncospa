@@ -5,7 +5,7 @@ import imagen from '../../../assets/lgo.jpg';
 import './login.css';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { login } from '../../Redux/Action/index'; // Importa la acción de login
+import { login } from '../../../Redux/Action/index'; // Importa la acción de login
 
 export default function Login() {
   const dispatch = useDispatch();

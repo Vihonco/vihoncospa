@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { TextField, Button, Container, Typography, Grid } from '@mui/material';
+import { TextField, Button, Container, Grid, Snackbar, Alert } from '@mui/material';
 import Cookies from 'js-cookie';
 import imagen from '../../../assets/lgo.jpg';
 import { useDispatch } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
-import { register } from '../../Redux/Action/index'; // Importa la acción de register
-import "./register.css"
+import { Link, useNavigate } from 'react-router-dom';
+import { register } from '../../../Redux/Action/index'; // Importa la acción de register
+import "./register.css";
+
 export default function Register() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -21,6 +22,10 @@ export default function Register() {
     rol: 'user', // Valor por defecto para rol
   });
 
+  const [snackbarOpen, setSnackbarOpen] = useState(false);
+  const [snackbarMessage, setSnackbarMessage] = useState('');
+  const [snackbarSeverity, setSnackbarSeverity] = useState('success');
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
@@ -28,21 +33,28 @@ export default function Register() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     try {
-      const response = await dispatch(register(formData));
-      
-      Cookies.set('session', response.data.token, { expires: 2 });
-      navigate('/admin');
-      
+      await dispatch(register(formData));
+      setSnackbarMessage('Usuario creado con éxito');
+      setSnackbarSeverity('success');
+      setSnackbarOpen(true);
     } catch (error) {
-      console.error('Error al registrar:', error.message);
+      setSnackbarMessage('Error al crear el usuario');
+      setSnackbarSeverity('error');
+      setSnackbarOpen(true);
     }
+  };
+
+  const handleSnackbarClose = () => {
+    setSnackbarOpen(false);
   };
 
   return (
     <Container component="main" maxWidth="sm" className="container-register">
       <div className="register-content">
+        <div className="form-header">
+          <Link to="/" className="back-link">Volver</Link>
+        </div>
         <div className="logo-contan">
           <img src={imagen} alt="Img Not Found" />
         </div>
@@ -71,7 +83,7 @@ export default function Register() {
                 onChange={handleChange}
               />
             </Grid>
-            <Grid item xs={14} sm={6}>
+            <Grid item xs={12} sm={6}>
               <TextField
                 variant="outlined"
                 margin="normal"
@@ -136,6 +148,15 @@ export default function Register() {
             Registrarse
           </Button>
         </form>
+        <Snackbar
+          open={snackbarOpen}
+          autoHideDuration={6000}
+          onClose={handleSnackbarClose}
+        >
+          <Alert onClose={handleSnackbarClose} severity={snackbarSeverity} sx={{ width: '100%' }}>
+            {snackbarMessage}
+          </Alert>
+        </Snackbar>
       </div>
     </Container>
   );

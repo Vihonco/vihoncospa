@@ -1,10 +1,11 @@
 import axios from "axios";
 
-import { getAuthToken, setAuthToken } from "../../Auht/uth";
+import { getAuthToken, setAuthToken } from "../../components/Auht/uth";
 
 export function register(newUser) {
     return async function (dispatch) {
         const response = await axios.post("http://localhost:3001/api/register", newUser);
+        console.log(response)
 
         dispatch({
             type: 'REGISTER',

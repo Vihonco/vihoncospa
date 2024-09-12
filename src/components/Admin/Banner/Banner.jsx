@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Carousel } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
-import { allBanner } from '../../Redux/Action/index'; // Ajusta la ruta si es necesario
+import { allBanner } from '../../../Redux/Action/index'; // Ajusta la ruta si es necesario
 
 const Banner = () => {
   const dispatch = useDispatch();
